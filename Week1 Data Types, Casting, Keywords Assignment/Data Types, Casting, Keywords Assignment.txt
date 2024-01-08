@@ -30,7 +30,7 @@ Assignment Questions (Week 1)
 -> Indicates that particular member should not be serialized.
 
 8. What are the types of casting?
--> 
+-> Converting one data type to other is type casting. Implicit Type Casting(Widening, done by JVM, No data loss), Explicit Type Casting(Narrowing, donw by Developer, Data may loss).
 
 9. What is boxing and unboxing?
 -> Wrapping of premitive data type into their respective Wrapper class objevt is caller boxing. And unboxing is getting premitive value from their wrapper class object.
