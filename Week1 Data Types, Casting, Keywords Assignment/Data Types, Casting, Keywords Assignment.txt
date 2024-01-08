@@ -1,0 +1,39 @@
+Assignment Questions (Week 1)
+
+1.What are Primitive Data types in Java?
+-> They are predifined data types in java that defines what size and type of data we are dealing with. There are 8 premitive data types in java.
+	1. byte
+	2. short
+	3. int
+	4. long
+	5. float
+	6. double
+	7. char
+	8. boolean
+
+2.What are Identifiers in Java?
+-> Identifiers are the names given to the variables, methods or class. 
+
+3. what is final class in java?
+-> final class cannot be extented by any other class.
+
+4. What are two ways to make a class final?
+-> by using final keyword with the class declaration. or by making the contructor final.
+
+5. Can we create instance of final class inn another class?
+-> Yes, final class can be instantiated.
+
+6. What is volatile keyword for?
+-> It indicated that perticular variable can be accessed by multiple threads and can be modified simultaniously.
+
+7. What is the use of Transient Keyword?
+-> Indicates that particular member should not be serialized.
+
+8. What are the types of casting?
+-> 
+
+9. What is boxing and unboxing?
+-> Wrapping of premitive data type into their respective Wrapper class objevt is caller boxing. And unboxing is getting premitive value from their wrapper class object.
+
+10.What is the difference between keywords, identifiers and literals in java?
+-> Identifiers are name given to data members, functions, class etc. Keywords are reserved by jvm for perticular use so cant be use as identifier. while literals are value assigned to identifiers.
