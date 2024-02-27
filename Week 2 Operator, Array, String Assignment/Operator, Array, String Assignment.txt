@@ -1,0 +1,122 @@
+1. List the operators in java
+-> 	a. Arithmetic Operators
+	b. Unary Operators
+	c. Assignment Operator
+	d. Relational Operators
+	e. Logical Operators
+	f. Ternary Operator
+	g. Bitwise Operators
+	h. Shift Operators
+	i. instance of operator
+
+2. Explain about increment decrement operator
+-> 	a. Increment operator is used to increment a value by 1. There are two types of increment operator: 
+		i. Post-Increment: Value is first used for operation and then incremented.
+		ii. Pre-Increment: Value is incremented first and then used in operations.
+	Eg: 
+		int a = 10;
+		int b = a++;    // b will store 10 and a value become 11 (a + 1) [post increment] ;
+		int c = ++b;	// c will store 11 and b value become 11 (a + 1) [pre increment] ;
+		
+	b. Decrement operator is used for decreasing the value by 1. There are two types of decrement operators. 
+		i. Post-decrement: Value is first used for operation the result and then decremented.
+		ii. Pre-decrement: Value is decremented first and then used in operations.
+	Eg: 
+		int a = 10;
+		int b = a--;    // b will store 10 and a value become 9 (a - 1) [post decrement] ;
+		int c = --b;	// c will store 9 and b value become 9 (a - 1) [pre decrement] ;
+
+3. What are the Conditional Operators in Java?
+-> There are 2 Contional operators in java, i. Conditional-AND  ii. Conditional-OR
+   The && and || operators perform Conditional-AND and Conditional-OR operations on two boolean expressions. 
+   These operators exhibit "short-circuiting" behavior, which means that the second operand is evaluated only if needed.
+   if first argument of OR operator is true it returns true without checking second conditional operator.
+   And operator returns false if he find first argument as false without checking second argument.
+
+4. What are the types of operators based on the number of operands?
+-> Based on number of operand operators are typed as :
+	i. 1 operand - Uneray Operator. eg: increment, decrement
+	ii. 2 operands - binary Operator. eg: arithmetic and locical operators
+	iii. 3 operands - ternary Operator. 
+
+5. What are the conditional Statements and use of conditional statements in Java?
+-> Conditional Statements allow us to control the flow of execution of code based on specific conditions being true or false.
+   a. if statement: checks a single condition. If the condition is true, the code block within it is executed. Otherwise, the program simply skips over that code block.
+      eg: if(a> 10) {
+		//code_lines
+		}
+   b. if-else statement: an extension of the if statement. It allows you to specify alternative code blocks to be executed based on whether the condition is true or false.
+      eg: if(a>10) {
+		//executes_if_condition_is_true
+	} else {
+		//If_condition_is_false
+	}
+   c. else-if statements: You can chain multiple else if statements together to create a series of conditions to check. 
+      If the first condition is false, the program evaluates the next else if condition, and so on. Only the code block associated with the first true condition is executed.
+      eg: if(a>10) {
+		//code_block1
+	} else-if(a<10){
+		//code_block2
+	} else {//code_block3
+		}
+   d. switch statement: allows us to compare a single value to multiple constant values and execute different code blocks based on the match. 
+      alternative to chained if-else if statements when dealing with multiple possible values.
+      eg: switch (value) {
+  		case value1:
+  		  	// code to be executed if value equals value1
+    			break;
+  		case value2:
+    			// code to be executed if value equals value2
+    			break;
+  		default:
+    			// code to be executed if value doesn't match any case
+		}
+
+
+6. What is the Syntax of if else statement?
+-> if (condition) {
+     // code to be executed if condition is true
+  } else {
+    // code to be executed if condition is false 
+  }
+
+
+7. What are the 3 types of iterative statements in java:
+-> a. for loop: It offers a concise way to initialize a variable, define a loop condition, and increment/decrement the variable after each iteration, all within a single statement.
+     eg: for (initialization; condition; increment/decrement) {
+  	// code to be executed in each iteration
+	}
+   b. while loop: continues to execute a block of code as long as a specific condition remains true. 
+      The condition is checked before each iteration, and the loop body only executes if the condition is true.
+     eg: while (condition) {
+       // code to be executed in each iteration
+	}
+   c. do-while loop: This loop guarantees that the code block within the loop executes at least once, even if the initial condition is false. 
+      The condition is checked only after the first execution, and the loop continues as long as the condition remains true.
+      eg: do {
+  	 // code to be executed in each iteration
+	} while (condition);
+
+
+8. What do you mean by an Array?
+-> Array is a fundamental data structure that allows you to store a fixed-size collection of elements of the same data type. 
+   It acts like a container that holds these elements in a contiguous memory location, meaning they are stored sequentially in memory.
+
+
+9. How to create an Array?
+-> a. Declaration : It has two components i. type  ii. name. 
+      type declares the element type of the array. The element type determines the data type of each element that comprises the array.
+      syntax: type var-name[];
+              type[] var-name;
+   b. Initialization: When an array is declared, only a reference of an array is created. To create or give memory to the array you need to initialize it. 
+	syntax: var-name = new type [size];
+   eg: int int_array = new int[10] // create integer array of size 10;
+
+
+10. State the difference between StringBuffer And stringBuilder in Java?
+->  i.  StringBuffer is synchronized. This means that multiple threads cannot call the methods of StringBuffer simultaneously.
+        StringBuilder is asynchronized. This means that multiple threads can call the methods of StringBuilder simultaneously.
+    ii. StringBuffer is called a thread safe.
+        StringBuilder is not thread safe.
+    iii.StringBuffer is lot slower than StringBuilder.
+        StringBuilder is a lot faster than StringBuffer.
